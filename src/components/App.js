@@ -1,5 +1,5 @@
 import React from 'react';
-import StyledMovieContainer from './StyledMovieContainer';
+import StyledMovieContainer from '../styled/StyledMovieContainer';
 
 const App = () => {
     return <StyledMovieContainer/>;

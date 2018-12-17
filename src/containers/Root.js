@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import store from '../store';
 import DevTools from './DevTools';
-import StyledContainer from '../components/StyledContainer';
+import StyledContainer from '../styled/StyledContainer';
 import GlobalStyle from '../GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import theme from '../constants/theme';
