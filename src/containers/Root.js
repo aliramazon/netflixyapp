@@ -6,6 +6,7 @@ import StyledContainer from '../styled/StyledContainer';
 import GlobalStyle from '../GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import theme from '../constants/theme';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from '../components/App';
 
 const Root = () => {
@@ -13,7 +14,9 @@ const Root = () => {
        <Provider store={store}>
             <ThemeProvider theme={theme}>
                 <StyledContainer>
-                    <App/>
+                    <Router>
+                        <App/>
+                    </Router>
                     <DevTools/>
                     <GlobalStyle/>
                 </StyledContainer>
