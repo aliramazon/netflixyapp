@@ -1,10 +1,16 @@
 import React from 'react';
+import StyledHeader from '../styled/StyledHeader';
+import StyledHeaderLink from '../styled/StyledHeaderLink';
+import FontAwesomeIcon from './FontAwesomeIcon';
 
 const MovieDetails = (props) => {
-    console.log(props);
     
     return (
-        <div>MovieDetails: {props.match.params.id}</div>
+        <StyledHeader>
+            <StyledHeaderLink href="/">
+                <FontAwesomeIcon icon="chevron-left" text="Go back" />
+            </StyledHeaderLink>
+        </StyledHeader>
     );
 };
 
