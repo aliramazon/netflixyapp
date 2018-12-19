@@ -4,6 +4,7 @@ import StyledHeaderTitle from '../styled/StyledHeaderTitle';
 import FontAwesomeIcon from './FontAwesomeIcon';
 import StyledHorizontalScroll from '../styled/StyledHorizontalScroll';
 import { movies } from '../staticData';
+import Movie from './Movie';
 
 const Movies = () => {
     return (
@@ -17,15 +18,13 @@ const Movies = () => {
             </StyledHeader>
             <StyledHorizontalScroll>
                 {movies.map(movie => (
-                    <div
-                        style={{
-                            border: '1px solid red',
-                            margin: '1rem'
-                        }}
+                    <Movie
                         key={movie.id}
-                    >
-                        {movie.name}
-                    </div>
+                        name={movie.name}
+                        poster={movie.poster}
+                        duration={movie.duration}
+                        year={movie.year}
+                    />
                 ))}
             </StyledHorizontalScroll>
         </Fragment>
