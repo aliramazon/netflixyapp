@@ -7,6 +7,8 @@ const theme = {
     colorTextPrimary: '#8b9095',
     colorTextSecondary: '#525661',
     colorWhite: '#fff',
+    colorPink: '#ff7675',
+    colorRed: '#d63031',
 
     // Poster
 

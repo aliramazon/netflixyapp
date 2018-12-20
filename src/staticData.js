@@ -27,7 +27,7 @@ export const movies = [
     name: "The Sheriff of the Fractured Jaw",
     genre: "crime drama, western",
     year: "1958",
-    poster: "https://i.imgur.com/66vQ0KE.png",
+    poster: "https://i.imgur.com/t70kJRP.png",
     duration: "1h 43min",
     trailer: "https://youtu.be/c-20Kfzu0Ts",
     details:

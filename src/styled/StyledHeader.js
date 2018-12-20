@@ -6,7 +6,6 @@ const StyledHeader = styled.header`
     color: ${props => props.theme.colorTextPrimary};
     font-size: 1.4rem;
     align-items: center;
-    padding: 0 1rem;
 `;
 
 export default StyledHeader;

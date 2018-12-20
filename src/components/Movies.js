@@ -1,8 +1,10 @@
 import React, { Fragment } from 'react';
+import StyledFooter from '../styled/StyledFooter';
 import StyledHeader from '../styled/StyledHeader';
 import StyledHeaderTitle from '../styled/StyledHeaderTitle';
 import FontAwesomeIcon from './FontAwesomeIcon';
 import StyledHorizontalScroll from '../styled/StyledHorizontalScroll';
+import StyledLargeButton from '../styled/StyledLargeButton';
 import { movies } from '../staticData';
 import Movie from './Movie';
 
@@ -27,6 +29,11 @@ const Movies = () => {
                     />
                 ))}
             </StyledHorizontalScroll>
+            <StyledFooter>
+                <StyledLargeButton>
+                    Get Recommended Movies
+                </StyledLargeButton>
+            </StyledFooter>
         </Fragment>
     );
 };

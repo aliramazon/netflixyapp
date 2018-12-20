@@ -6,13 +6,14 @@ const StyledMovieContainer = styled.section`
     background: ${props => props.theme.secondaryBg};
     width: 90%;
     height: 95vh;
-    border-radius: 1.5rem;
+    border-radius: .5rem;
     display: flex;
     flex-direction: column;
+    padding: 1rem;
 
     ${devices.md`
         width: 64rem;
-        height: 39rem;
+        height: 42rem;
     `};
 `;
 
