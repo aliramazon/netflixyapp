@@ -5,11 +5,15 @@ import StyledHeaderTitle from '../styled/StyledHeaderTitle';
 import FontAwesomeIcon from './FontAwesomeIcon';
 import StyledHorizontalScroll from '../styled/StyledHorizontalScroll';
 import StyledLargeButton from '../styled/StyledLargeButton';
-import { movies } from '../staticData';
 import Movie from './Movie';
 
 
 class Movies extends Component {
+    
+    componentDidMount() {
+        this.props.getMovies();
+    }
+
     render() {
         return (
             <Fragment>
