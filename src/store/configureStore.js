@@ -9,7 +9,7 @@ const configureStore = initialState => {
         rootReducer, 
         initialState,
         compose(
-            applyMiddleware(logger, api),
+            applyMiddleware(api, logger),
             DevTools.instrument()
         )
     );

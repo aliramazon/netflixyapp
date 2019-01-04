@@ -8,9 +8,13 @@ const MoviesContainer = props => <Movies {...props} />;
 
 const mapStateToProps = state => ({
     movies: _.values(state.movies)
+});
+
+const mapDispatchToProps = dispatch => ({
+    getMovies: () => dispatch(getMovies())
 })
 
 export default connect(
     mapStateToProps, 
-    { getMovies }
+    mapDispatchToProps
 )(MoviesContainer);
