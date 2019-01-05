@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-const FontAwesomeIcon = ({ icon = "ellipsis-h", text = false }) => (
-    <Fragment>
+const FontAwesomeIcon = ({ icon = "ellipsis-h", text = false, onClick }) => (
+    <div onClick={onClick}>
         <span className={`fas fa-${icon}`} />
         {Boolean(text) && <span> &nbsp; {text} </span>}
-    </Fragment>
+    </div>
 );
 
 export default FontAwesomeIcon;

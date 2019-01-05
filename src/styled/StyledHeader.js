@@ -6,6 +6,7 @@ const StyledHeader = styled.header`
     color: ${props => props.theme.colorTextPrimary};
     font-size: 1.4rem;
     align-items: center;
+    z-index: 9999;
 `;
 
 export default StyledHeader;

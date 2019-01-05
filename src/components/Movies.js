@@ -6,6 +6,7 @@ import FontAwesomeIcon from './FontAwesomeIcon';
 import StyledHorizontalScroll from '../styled/StyledHorizontalScroll';
 import StyledLargeButton from '../styled/StyledLargeButton';
 import Movie from './Movie';
+import HelpMenuContainer from '../containers/HelpMenuContainer';
 
 
 class Movies extends Component {
@@ -18,7 +19,7 @@ class Movies extends Component {
         return (
             <Fragment>
                 <StyledHeader>
-                    <FontAwesomeIcon icon="bars" text="help" />
+                    <HelpMenuContainer/>
                     <StyledHeaderTitle>
                         The Movie Recommeder
                     </StyledHeaderTitle>
