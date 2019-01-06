@@ -5,6 +5,7 @@ import StyledHeaderTitle from '../styled/StyledHeaderTitle';
 import FontAwesomeIcon from './FontAwesomeIcon';
 import StyledHorizontalScroll from '../styled/StyledHorizontalScroll';
 import StyledLargeButton from '../styled/StyledLargeButton';
+import StyledLoader from '../styled/StyledLoader';
 import Movie from './Movie';
 import HelpMenuContainer from '../containers/HelpMenuContainer';
 
@@ -26,15 +27,18 @@ class Movies extends Component {
                     <FontAwesomeIcon icon="search" />
                 </StyledHeader>
                 <StyledHorizontalScroll>
-                    {this.props.movies.map(movie => (
-                        <Movie
-                            key={movie.id}
-                            name={movie.name}
-                            poster={movie.poster}
-                            duration={movie.duration}
-                            year={movie.year}
-                        />
-                    ))}
+                    {this.props.loading ?
+                        <StyledLoader/> :
+                        this.props.movies.map(movie => (
+                            <Movie
+                                key={movie.id}
+                                name={movie.name}
+                                poster={movie.poster}
+                                duration={movie.duration}
+                                year={movie.year}
+                            />
+                        ))
+                    }
                 </StyledHorizontalScroll>
                 <StyledFooter>
                     <StyledLargeButton>
