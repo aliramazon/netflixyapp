@@ -1,4 +1,5 @@
 import { createStore, applyMiddleware,compose} from 'redux';
+import { persistStore } from 'redux-persist';
 import logger from 'redux-logger';
 import api from '../middleware/api';
 import toastMiddleware from '../middleware/toasts';
@@ -21,7 +22,10 @@ const configureStore = initialState => {
         })
     }
 
-    return store;
+    const persiststore = persistStore(store);
+
+
+    return { store, persiststore };
 }
 
 export default configureStore;

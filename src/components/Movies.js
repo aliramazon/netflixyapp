@@ -6,6 +6,7 @@ import FontAwesomeIcon from './FontAwesomeIcon';
 import StyledHorizontalScroll from '../styled/StyledHorizontalScroll';
 import StyledLargeButton from '../styled/StyledLargeButton';
 import StyledLoader from '../styled/StyledLoader';
+import StyledMovieLink from '../styled/StyledMovieLink';
 import Movie from './Movie';
 import HelpMenuContainer from '../containers/HelpMenuContainer';
 
@@ -30,13 +31,17 @@ class Movies extends Component {
                     {this.props.loading ?
                         <StyledLoader/> :
                         this.props.movies.map(movie => (
-                            <Movie
+                            <StyledMovieLink
                                 key={movie.id}
-                                name={movie.name}
-                                poster={movie.poster}
-                                duration={movie.duration}
-                                year={movie.year}
-                            />
+                                href={`movies/${movie.id}`}
+                            >
+                                <Movie
+                                    name={movie.name}
+                                    poster={movie.poster}
+                                    duration={movie.duration}
+                                    year={movie.year}
+                                />
+                            </StyledMovieLink>
                         ))
                     }
                 </StyledHorizontalScroll>
