@@ -13,8 +13,9 @@ const theme = {
     // Poster
 
     posterWidth: '12.7rem',
-    posterHeight: '19.1rem'
-
+    posterWidthExpanded: '22.9rem',
+    posterHeight: '19.1rem',
+    posterHeightExpanded: '31.6rem'
 };
 
 export default theme

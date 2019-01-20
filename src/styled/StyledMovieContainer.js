@@ -5,7 +5,6 @@ import { devices } from '../utils/styledUtils';
 const StyledMovieContainer = styled.section`
     background: ${props => props.theme.secondaryBg};
     width: 90%;
-    height: 95vh;
     border-radius: .5rem;
     display: flex;
     flex-direction: column;

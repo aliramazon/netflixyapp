@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         padding: 0px;
         height: 100%;
+        font-size: inherit;
     }
 
     #root {
