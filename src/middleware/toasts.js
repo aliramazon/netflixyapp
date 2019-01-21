@@ -11,9 +11,7 @@ const reactToastifyDefaultOptions = {
 
 const toastMiddleware = () => next => action => {
   next(action);
-  console.log(action);
   
-
   if (action.type !== SHOW_TOAST) return;
 
   const { message, type } = action.payload;
