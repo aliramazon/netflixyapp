@@ -1,7 +1,7 @@
 import { SHOW_TOAST } from "../constants/actionTypes";
 import { toast } from "react-toastify";
 
-const reactToastifyDefaultOptions = {
+export const reactToastifyDefaultOptions = {
   autoClose: 6000,
   closeButton: false,
   type: toast.TYPE.SUCCESS,

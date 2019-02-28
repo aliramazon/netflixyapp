@@ -1,4 +1,4 @@
-import * as actions from '../actions/apiActions';
+import * as actions from '../../actions/apiActions';
 
 describe("apiStart", () => {
     test("has type API_START", () => {
